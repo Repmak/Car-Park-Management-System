@@ -1556,7 +1556,7 @@ class Ui_Dialog(object):
                                             "p, li { white-space: pre-wrap; }\n"
                                             "</style></head><body style=\" font-family:\'Cascadia Code SemiBold\'; font-size:12pt; font-weight:600; font-style:normal;\">\n"
                                             "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'MS Shell Dlg 2\'; font-size:8.25pt; font-weight:400;\"><br /></p></body></html>"))
-        self.textEdit_22.setPlaceholderText(_translate("Dialog", "Enter day"))
+        self.textEdit_22.setPlaceholderText(_translate("Dialog", "Enter date"))
         self.textEdit_19.setWhatsThis(_translate("Dialog", "<html><head/><body><p><br/></p></body></html>"))
         self.textEdit_19.setHtml(_translate("Dialog",
                                             "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
@@ -1580,7 +1580,7 @@ class Ui_Dialog(object):
                                             "p, li { white-space: pre-wrap; }\n"
                                             "</style></head><body style=\" font-family:\'Cascadia Code SemiBold\'; font-size:12pt; font-weight:600; font-style:normal;\">\n"
                                             "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'MS Shell Dlg 2\'; font-size:8.25pt; font-weight:400;\"><br /></p></body></html>"))
-        self.textEdit_23.setPlaceholderText(_translate("Dialog", "Enter day"))
+        self.textEdit_23.setPlaceholderText(_translate("Dialog", "Enter date"))
         self.label_10.setText(_translate("Dialog", " Registration"))
         self.label_12.setText(_translate("Dialog", " Make"))
         self.label_9.setText(_translate("Dialog", " Model"))
