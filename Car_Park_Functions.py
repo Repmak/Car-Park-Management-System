@@ -28,6 +28,7 @@ def executesqlstatement(sqlstatement, array, comboxstate, errormsg):
         elif comboxstate == "Insert data in the database":
             try:
                 cursor.execute(sqlstatement)  # INSERT STATEMENT
+                cnxn.commit()
                 sqlstatement = "SELECT * FROM CollyersParking WHERE RegistrationNumber = '" + array[0] + "'"
                 cursor.execute(sqlstatement)  # SEARCHES NEW RECORD
                 result = cursor.fetchall()
@@ -36,6 +37,7 @@ def executesqlstatement(sqlstatement, array, comboxstate, errormsg):
         elif comboxstate == "Modify data in the database":
             try:
                 cursor.execute(sqlstatement)  # MODIFY STATEMENT
+                cnxn.commit()
                 sqlstatement = "SELECT * FROM CollyersParking WHERE RegistrationNumber = '" + array[0] + "'"
                 cursor.execute(sqlstatement)  # SEARCHES NEW RECORD
                 result = cursor.fetchall()
@@ -43,6 +45,7 @@ def executesqlstatement(sqlstatement, array, comboxstate, errormsg):
                 errormsg = " Invalid registration number entered."
         else:
             cursor.execute(sqlstatement)  # DELETE STATEMENT
+            cnxn.commit()
             sqlstatement = "SELECT * FROM CollyersParking"
             cursor.execute(sqlstatement)
             result = cursor.fetchall()
